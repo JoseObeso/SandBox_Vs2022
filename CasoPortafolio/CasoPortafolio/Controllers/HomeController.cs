@@ -15,7 +15,16 @@ namespace CasoPortafolio.Controllers
 
         public IActionResult Index()
         {
-            return View();
+            var personasTotal = new Personas()
+            {
+                Id = 1,
+                Nombre = "Juan",
+                Sex = "Masculino"
+            };
+
+            
+
+            return View(personasTotal);
         }
 
         public IActionResult Privacy()
