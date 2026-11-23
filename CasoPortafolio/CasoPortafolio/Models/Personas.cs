@@ -4,7 +4,7 @@
     {
         public required int Id { get; set; }
         public required string Nombre { get; set; }  
-        public required  string Sex { get; set; } 
-
+        public required  string Sex { get; set; }
+        public int Iedad { get; internal set; }
     }
 }

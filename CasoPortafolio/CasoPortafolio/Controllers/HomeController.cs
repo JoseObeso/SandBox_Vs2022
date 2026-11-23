@@ -19,7 +19,8 @@ namespace CasoPortafolio.Controllers
             {
                 Id = 1,
                 Nombre = "Juan",
-                Sex = "Masculino"
+                Sex = "Masculino",
+                Iedad = 5
             };
 
             
