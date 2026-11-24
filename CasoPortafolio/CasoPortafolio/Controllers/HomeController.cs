@@ -18,7 +18,7 @@ namespace CasoPortafolio.Controllers
             var personasTotal = new Personas()
             {
                 Id = 1,
-                Nombre = "Juan",
+                Nombre = "José",
                 Sex = "Masculino",
                 Iedad = 5
             };
@@ -27,6 +27,9 @@ namespace CasoPortafolio.Controllers
 
             return View(personasTotal);
         }
+
+       
+
 
         public IActionResult Privacy()
         {

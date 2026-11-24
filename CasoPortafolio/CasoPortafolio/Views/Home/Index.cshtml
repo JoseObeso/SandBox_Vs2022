@@ -9,51 +9,6 @@
 }
 
 
-<div class="text-center">
-
-    <h3 class="display-4">Bienvenido @Model.Nombre.ToUpper()</h3>
-
-
-    <h5>Hoy es : @FechaHoy.ToString("dd/MM/yyyy HH:mm:ss")</h5>
-
-   
-        @foreach (var item in TodosNombre)
-        {
- 
-
-            <details>
-                <summary>@item</summary>
-                <p>Este es el detalle para @item</p>
-            </details>
-
-        }
-
-    
-
-
-
-    @if (Model.Iedad >= 18)
-    {
-        <h2> Eres mayor de edad</h2>
-        <h2> Tu edad @Model.Iedad, y pulsa el boton <button id="Mayor">Pulsar</button> </h2>
-
-    }
-    else
-    {
-        <h2> Eres menor de edad</h2>
-        <h2> Tu edad @Model.Iedad, y pulsa el boton <button id="Menor">Pulsar</button> </h2>
-    }
-
-
-
-
-
-    <h1 class="display-4">Su sexo es : @Model.Sex.ToUpper()</h1>
-    <h1 class="display-4">Tu ID es  : @Model.Id</h1>
-
-
-    <h2>Es te es el primero</h2>
-
-
-</div>
-
+<partial name="_Inicio" />
+<partial name="_Centro" />
+<partial name="_Final" />
